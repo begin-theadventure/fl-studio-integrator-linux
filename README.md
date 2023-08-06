@@ -4,7 +4,7 @@ Integrate FL Studio with your Linux system.
 #### So what does it do?
 It doesn't take care of installing FL Studio, but of integrating it with the system:
 
-- Provides a shell script that runs the `.exe` with Wine, a `.desktop` application shortcut and the icon;
+- Provides(/Installs) a shell script that runs the `.exe` with Wine and a `.desktop` application shortcut (/and an icon);
 
 - Associates the `.flp` files and allows to open them (thanks [defusq](https://aur.archlinux.org/packages/vtfedit)) from the file manager, desktop etc., or the terminal: `fl-studio-integrator "/path/to/*.flp"`.
 
