@@ -23,7 +23,7 @@ Different distros:
 
 3. Go to `~/.local/share/applications`, make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 
-4. Add `/home/ReplaceThisWithYourUSERname` in `fl-studio-integrator.desktop` to `Exec=` and `Icon=`.
+4. Add `/home/ReplaceThisWithYourUSERname` (before /..) in `fl-studio-integrator.desktop` to `Exec=` and `Icon=`.
 
 6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` to `mimeapps.list`.
 
