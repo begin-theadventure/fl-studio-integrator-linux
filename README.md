@@ -2,7 +2,7 @@
 Integrate FL Studio with your Linux system.
 
 #### So what does it do?
-It doesn't take care of installing FL Studio, but of integrating it with your system:
+It doesn't take care of installing FL Studio, but of integrating it with the system:
 
 - Provides a shell script that runs the `.exe` with Wine, a `.desktop` application shortcut and the icon;
 
