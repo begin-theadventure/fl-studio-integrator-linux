@@ -17,7 +17,7 @@ Different distros:
 
 <sup>(e.g. Steam Deck)</sup>
 
-1. Download `fl-studio-integrator.zip` from [the releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest) and [the icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
+1. Download `fl-studio-integrator.zip` (from the [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
 2. Extract the zip file in the home directory.
 
@@ -36,6 +36,6 @@ To open the app using the terminal create an alias command:
 `~/.bashrc` or `~/.zshrc`: `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
 
 ##### Root
-1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and [an icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
+1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
