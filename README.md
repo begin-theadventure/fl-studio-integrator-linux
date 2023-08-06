@@ -39,3 +39,5 @@ To open the app using the terminal create an alias command:
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
+
+## Of course, this is not official.
