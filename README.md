@@ -25,7 +25,7 @@ Different distros:
 
 6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` to `mimeapps.list`.
 
-To open the app from the terminal create an alias command:
+To open from the terminal create an alias command:
 
 `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`: `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
 
