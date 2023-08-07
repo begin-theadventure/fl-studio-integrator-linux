@@ -15,15 +15,15 @@ Different distros:
 ##### Home
 <sup>(e.g. Steam Deck)</sup>
 
-1. Download `fl-studio-integrator.zip` (from the [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
+1. Download `fl-studio-integrator.zip` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
 2. Extract the zip file in the home directory.
 
 3. Go to `~/.local/share/applications`, make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 
-4. Add `/home/ReplaceThisWithYourUSERname` (before /..) in `fl-studio-integrator.desktop` to `Exec=` and `Icon=`.
+4. Add `/home/ReplaceThisWithYourUSERname` in `fl-studio-integrator.desktop` to `Exec=` and `Icon=` (before `/.local/`..).
 
-6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` to `mimeapps.list`.
+6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` in `mimeapps.list`.
 
 To open from the terminal create an alias command:
 
