@@ -9,12 +9,10 @@ It doesn't take care of installing FL Studio, but of integrating it with the sys
 - Associates the `.flp` files and allows to open them (thanks [defusq](https://aur.archlinux.org/packages/vtfedit)) from the file manager, desktop etc., or the terminal: `fl-studio-integrator "/path/to/*.flp"`.
 
 #### How to install
-
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
 
 Different distros:
 ##### Home
-
 <sup>(e.g. Steam Deck)</sup>
 
 1. Download `fl-studio-integrator.zip` (from the [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
@@ -27,9 +25,9 @@ Different distros:
 
 6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` to `mimeapps.list`.
 
-To open the app using the terminal create an alias command:
+To open the app from the terminal create an alias command:
 
-`~/.bashrc` or `~/.zshrc`: `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
+`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`: `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
 
 ##### Root
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
