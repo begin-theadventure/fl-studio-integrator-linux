@@ -2,7 +2,7 @@
 Integrate FL Studio with your Linux system.
 
 #### So what does it do?
-It doesn't take care of installing FL Studio, but of integrating it with the system:
+It doesn't take care of installing FL Studio, but integrating it with the system:
 
 - Provides(/Installs) a shell script that runs the `.exe` with Wine and a `.desktop` application shortcut (/and an icon);
 
@@ -33,7 +33,7 @@ To open from the terminal create an alias command:
 2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
 
-#### Tips, possible performance improvements.
+#### Tips, and possible performance improvements
 
 ##### Low latency
 
