@@ -13,7 +13,6 @@ Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
 
 Different distros:
 ##### Home
-<sup>(e.g. Steam Deck)</sup>
 
 1. Download `fl-studio-integrator.zip` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
