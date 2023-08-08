@@ -33,4 +33,27 @@ To open from the terminal create an alias command:
 2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
 
-## Of course, this is not official.
+#### Tips, possible performance improvements.
+
+##### Low latency
+
+[WineASIO](https://github.com/wineasio/wineasio), adjust with `PIPEWIRE_QUANTUM`, which is already included in the script.
+
+##### Virtual desktop
+
+`wine` `explorer /desktop=FLStudio,RESOLxUTION`, for example, `1920x1080`.
+
+##### [GameMode](https://github.com/FeralInteractive/gamemode)
+
+`gamemoderun` `wine`
+
+##### esync / fsync
+
+`export WINEESYNC=1 WINEFSYNC=1`
+
+##### NVIDIA
+
+`export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"`
+
+
+# Of course, this is not official.
