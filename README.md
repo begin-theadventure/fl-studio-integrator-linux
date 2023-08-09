@@ -35,25 +35,43 @@ To open from the terminal create an alias command:
 
 #### Tips, and possible performance improvements
 
-##### Low latency
-
+**<details><summary> Low latency </summary>**
 [WineASIO](https://github.com/wineasio/wineasio), adjust with `PIPEWIRE_QUANTUM`, which is already included in the script.
+</details>
 
-##### Virtual desktop
-
+**<details><summary> Virtual desktop </summary>**
 `wine` `explorer /desktop=FLStudio,RESOLxUTION`, for example, `1920x1080`.
+</details>
 
-##### [GameMode](https://github.com/FeralInteractive/gamemode)
+**<details><summary> GameMode </summary>**
+[`gamemoderun`](https://github.com/FeralInteractive/gamemode) `wine`
 
-`gamemoderun` `wine`
+* Renice
 
-##### esync / fsync
+Adjusting the nice value/priority of processes, for example, to 7 (High).</summary>
 
-`export WINEESYNC=1 WINEFSYNC=1`
+[/etc/gamemode.ini](https://github.com/FeralInteractive/gamemode/blob/master/example/gamemode.ini)
 
-##### NVIDIA
+```
+[general]
+; GameMode can renice game processes. You can put any value between 0 and 20 here, the value
+; will be negated and applied as a nice value (0 means no change). Defaults to 0.
+; To use this feature, the user must be added to the gamemode group (and then rebooted):
+; sudo usermod -aG gamemode $(whoami)
+renice=7
+```
+</details>
 
-`export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"`
+**<details><summary> esync / fsync </summary>**
+```
+export WINEESYNC=1 WINEFSYNC=1
+```
+</details>
 
+**<details><summary> NVIDIA </summary>**
+```
+export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
+```
+</details>
 
 # Of course, this is not official.
