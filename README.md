@@ -35,6 +35,10 @@ To open from the terminal create an alias command:
 
 #### Tips, and possible performance improvements
 
+**<details><summary> Plugin GUI glitches </summary>**
+`WINEDDLOVERRIDES="d2d1=disabled"`
+</details>
+
 **<details><summary> Low latency </summary>**
 [WineASIO](https://github.com/wineasio/wineasio), adjust with `PIPEWIRE_QUANTUM`, which is already included in the script.
 </details>
