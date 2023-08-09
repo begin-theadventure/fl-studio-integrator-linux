@@ -36,7 +36,7 @@ To open from the terminal create an alias command:
 #### Tips, and possible performance improvements
 
 **<details><summary> Plugin GUI glitches </summary>**
-`WINEDDLOVERRIDES="d2d1=disabled"`
+`export WINEDDLOVERRIDES="d2d1=disabled"`
 </details>
 
 **<details><summary> Low latency </summary>**
@@ -73,9 +73,12 @@ export WINEESYNC=1 WINEFSYNC=1
 </details>
 
 **<details><summary> NVIDIA </summary>**
+Might cause issues.
 ```
 export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
 ```
+
+`prime-run` `__GLX_VENDOR_LIBRARY_NAME="nvidia"` cause crashes.
 </details>
 
 # Of course, this is not official.
