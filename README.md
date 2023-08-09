@@ -73,12 +73,12 @@ export WINEESYNC=1 WINEFSYNC=1
 </details>
 
 **<details><summary> NVIDIA </summary>**
-Might cause issues.
+These might cause issues.
 ```
-export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
+export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0
 ```
 
-`prime-run` `__GLX_VENDOR_LIBRARY_NAME="nvidia"` cause crashes.
+`prime-run` and `__GLX_VENDOR_LIBRARY_NAME="nvidia"` cause crashes.
 </details>
 
 # Of course, this is not official.
