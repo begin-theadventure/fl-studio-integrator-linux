@@ -47,6 +47,8 @@ To open from the terminal create an alias command:
 `wine` `explorer /desktop=FLStudio,RESOLxUTION`, for example, `1920x1080`.
 </details>
 
+[**Wine Breeze Dark theme**](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398)
+
 **<details><summary> GameMode </summary>**
 [`gamemoderun`](https://github.com/FeralInteractive/gamemode) `wine`
 
