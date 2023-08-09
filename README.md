@@ -33,7 +33,7 @@ To open from the terminal create an alias command:
 2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
 
-#### Tips, and possible performance improvements
+#### Tips
 
 **<details><summary> Plugin GUI glitches </summary>**
 `export WINEDDLOVERRIDES="d2d1=disabled"`
@@ -48,6 +48,8 @@ To open from the terminal create an alias command:
 </details>
 
 [**Wine Breeze Dark theme**](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398)
+
+#### Possible performance improvements
 
 **<details><summary> GameMode </summary>**
 [`gamemoderun`](https://github.com/FeralInteractive/gamemode) `wine`
