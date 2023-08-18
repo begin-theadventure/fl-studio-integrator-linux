@@ -40,14 +40,18 @@ To open from the terminal create an alias command:
 </details>
 
 **<details><summary> Low latency </summary>**
-[WineASIO](https://github.com/wineasio/wineasio), adjust with `PIPEWIRE_QUANTUM`, which is already included in the script.
+[WineASIO](https://github.com/wineasio/wineasio), adjust with p`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the script.
 </details>
 
 **<details><summary> Virtual desktop </summary>**
 `wine` `explorer /desktop=FLStudio,RESOLxUTION`, for example, `1920x1080`.
 </details>
 
-[**Wine Breeze Dark theme**](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398)
+**<details><summary> Wine Breeze Dark theme </summary>**
+[Link](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398).
+
+To install, run: `WINEPREFIX=/path/to/wineprefix wine wine-breeze-dark.reg` (in the same folder as the `.reg` file)
+</details>
 
 #### Possible performance improvements
 
