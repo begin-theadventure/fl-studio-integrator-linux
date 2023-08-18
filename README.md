@@ -40,7 +40,7 @@ To open from the terminal create an alias command:
 </details>
 
 **<details><summary> Low latency </summary>**
-[WineASIO](https://github.com/wineasio/wineasio), adjust with p`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the script.
+[WineASIO](https://github.com/wineasio/wineasio), adjust with [`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the script.
 </details>
 
 **<details><summary> Virtual desktop </summary>**
