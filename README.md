@@ -18,20 +18,26 @@ Different distros:
 
 2. Extract the zip file in the home directory.
 
-3. Go to `~/.local/share/applications`, make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
+3. Go to `~/.local/share/applications`, make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 
-4. Add `/home/ReplaceThisWithYourUSERname` in `fl-studio-integrator.desktop` to `Exec=` and `Icon=` (before `/.local/`..).
+4. Add `/home/ReplaceThisWithYourUSERname` in `fl-studio-integrator.desktop`, `-elm`, and `-reg` to `Exec=` and `Icon=` (before `/.local/`..).
 
 6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` in `mimeapps.list`.
 
-To open from the terminal create an alias command:
+To open from the terminal create alias commands:
 
-`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`: `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
+`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`:
+
+`alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
+
+`alias fl-studio-integrator-elm='~/.local/share/applications/fl-studio-integrator-elm'`
+
+`alias fl-studio-integrator-reg='~/.local/share/applications/fl-studio-integrator-reg'`
 
 ##### Root
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
-2. Make `fl-studio-integrator` executable and edit the `WINEPREFIX` path in it.
-3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n22) (lines 22-25, `/usr/`..).
+2. Make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
+3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n32) (lines 32-39, `/usr/`..).
 
 #### Tips
 
@@ -50,7 +56,7 @@ To open from the terminal create an alias command:
 **<details><summary> Wine Breeze Dark theme </summary>**
 [Link](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398).
 
-To install, run: `env WINEPREFIX="/path/to/wineprefix" wine wine-breeze-dark.reg` (in the same folder as the `.reg` file)
+To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in the terminal).
 </details>
 
 #### Possible performance improvements
