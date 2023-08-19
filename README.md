@@ -50,7 +50,7 @@ To open from the terminal create an alias command:
 **<details><summary> Wine Breeze Dark theme </summary>**
 [Link](https://gist.github.com/Zeinok/ceaf6ff204792dde0ae31e0199d89398).
 
-To install, run: `WINEPREFIX=/path/to/wineprefix wine wine-breeze-dark.reg` (in the same folder as the `.reg` file)
+To install, run: `env WINEPREFIX="/path/to/wineprefix" wine wine-breeze-dark.reg` (in the same folder as the `.reg` file)
 </details>
 
 #### Possible performance improvements
