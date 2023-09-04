@@ -40,6 +40,7 @@ To open from the terminal create alias commands:
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n32) (lines 32-39, `/usr/`..).
+4. `sudo update-mime-database /usr/share/mime` (for file associations).
 
 #### Tips
 
@@ -60,6 +61,10 @@ To open from the terminal create alias commands:
 
 To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in the terminal).
 </details>
+
+**<details><summary> Disabling internet access in the prefix </summary>**
+
+Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`)-> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Addres and Port - Apply - OK
 
 #### Possible performance improvements
 
@@ -91,10 +96,10 @@ export WINEESYNC=1 WINEFSYNC=1
 **<details><summary> NVIDIA </summary>**
 These might cause issues.
 ```
-export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0
+export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0
 ```
 
-`prime-run` and `__GLX_VENDOR_LIBRARY_NAME="nvidia"` cause crashes.
+`prime-run` and `__GLX_VENDOR_LIBRARY_NAME="nvidia"` (can) cause crashes.
 </details>
 
 # Of course, this is not official.
