@@ -65,6 +65,7 @@ To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in
 **<details><summary> Disabling internet access in the prefix </summary>**
 
 Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`)-> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Addres and Port - Apply - OK
+</details>
 
 #### Possible performance improvements
 
