@@ -51,13 +51,15 @@ As well as installing DXVK and/or VKD3D (they can fix glitches in some, but also
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
-Symlink all prefix files to `~/.wine` (and remove them after).
+Symlink the prefix to `~/.wine`.
 
 Download [DXVK](https://github.com/doitsujin/dxvk/releases/latest) and the [install script](https://github.com/doitsujin/dxvk/blob/4f90d7bf5f9ad785660507e0cb459a14dab5ac75/setup_dxvk.sh) -> `./setup_dxvk.sh install` in the terminal.
 
 Download [VKD3D](https://github.com/HansKristian-Work/vkd3d-proton/releases/latest) -> `./setup_dxvk.sh install` in the terminal.
 
-To uninstall change `install` to `uninstall`.
+After installing you can delete the symlink.
+
+To update, do the same steps; to uninstall, change `install` to `uninstall`."
 </details>
 
 **<details><summary> Low latency </summary>**
