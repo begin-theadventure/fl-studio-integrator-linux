@@ -47,7 +47,7 @@ To open from the terminal create alias commands:
 **<details><summary> Plugin GUI glitches </summary>**
 `export WINEDDLOVERRIDES="d2d1=disabled"` might help.
 
-As well installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
+As well as installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
