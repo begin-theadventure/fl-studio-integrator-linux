@@ -8,7 +8,7 @@ It doesn't take care of installing FL Studio, but integrating it with the system
 
 - Associates the `.flp` files and allows to open them (thanks [defusq](https://aur.archlinux.org/packages/vtfedit)) from the file manager, desktop etc., or the terminal: `fl-studio-integrator "/path/to/*.flp"`.
 
-In version 1.0.4, a new integration has been added for .exe, .lnk, .msi and .reg files!
+In version 1.0.4, a new integration has been added for `.exe`, `.lnk`, `.msi` and `.reg` files!
 
 #### How to install
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
@@ -40,12 +40,24 @@ To open from the terminal create alias commands:
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n32) (lines 32-39, `/usr/`..).
-4. `sudo update-mime-database /usr/share/mime` (for file associations).
+4. `sudo update-mime-database /usr/share/mime` (for `.flp` association).
 
 #### Tips
 
 **<details><summary> Plugin GUI glitches </summary>**
-`export WINEDDLOVERRIDES="d2d1=disabled"`
+`export WINEDDLOVERRIDES="d2d1=disabled"` might help.
+
+As well installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
+</details>
+
+**<details><summary> DXVK/VKD3D </summary>**
+Symlink all prefix files to `~/.wine` (and remove them after).
+
+Download [DXVK](https://github.com/doitsujin/dxvk/releases/latest) and the [install script](https://github.com/doitsujin/dxvk/blob/4f90d7bf5f9ad785660507e0cb459a14dab5ac75/setup_dxvk.sh) -> `./setup_dxvk.sh install` in the terminal.
+
+Download [VKD3D](https://github.com/HansKristian-Work/vkd3d-proton/releases/latest) -> `./setup_dxvk.sh install` in the terminal.
+
+To uninstall change `install` to `uninstall`.
 </details>
 
 **<details><summary> Low latency </summary>**
@@ -64,7 +76,7 @@ To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in
 
 **<details><summary> Disabling internet access in the prefix </summary>**
 
-Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`)-> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Addres and Port - Apply - OK
+Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`)-> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Address and Port - Apply - OK
 </details>
 
 #### Possible performance improvements
@@ -103,4 +115,6 @@ export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" __GL_SHAD
 `prime-run` and `__GLX_VENDOR_LIBRARY_NAME="nvidia"` (can) cause crashes.
 </details>
 
-# Of course, this is not official.
+**DXVK/VKD3D might also help**.
+
+# Of course, this project is not official.
