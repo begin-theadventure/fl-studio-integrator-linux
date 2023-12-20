@@ -45,9 +45,11 @@ To open from the terminal create alias commands:
 #### Tips
 
 **<details><summary> Plugin GUI glitches </summary>**
-`export WINEDDLOVERRIDES="d2d1=disabled"` might help.
+1. Running the plugin in a `Detached` mode; re-clicking `Captonize` or `Detailed settings` buttons; clicking on the plugin.
 
-As well as installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
+2. `export WINEDDLOVERRIDES="d2d1=disabled"`.
+
+3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
@@ -102,19 +104,19 @@ renice=7
 ```
 </details>
 
-**<details><summary> esync / fsync </summary>**
+**<details><summary> fsync </summary>**
 ```
-export WINEESYNC=1 WINEFSYNC=1
+export WINEESYNC=0 WINEFSYNC=1
 ```
 </details>
 
 **<details><summary> NVIDIA </summary>**
 These might cause issues.
 ```
-export __NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus="NVIDIA_only" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0
+export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0 __VK_LAYER_NV_optimus="NVIDIA_only" VK_ICD_FILENAMES="/usr/share/vulkan/icd.d/nvidia_icd.json"
 ```
 
-`prime-run` and `__GLX_VENDOR_LIBRARY_NAME="nvidia"` (can) cause crashes.
+`__GLX_VENDOR_LIBRARY_NAME="nvidia"`, `__NV_PRIME_RENDER_OFFLOAD=1` and `prime-run` (can) cause crashes.
 </details>
 
 **DXVK/VKD3D might also help**.
