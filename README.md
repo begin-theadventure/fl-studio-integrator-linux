@@ -14,7 +14,8 @@ In version 1.0.4, a new integration has been added for `.exe`, `.lnk`, `.msi` an
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
 
 Different distros:
-##### Home
+
+**<details><summary> Home </summary>**
 
 1. Download `fl-studio-integrator.zip` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
@@ -35,12 +36,14 @@ To open from the terminal create alias commands:
 `alias fl-studio-integrator-elm='~/.local/share/applications/fl-studio-integrator-elm'`
 
 `alias fl-studio-integrator-reg='~/.local/share/applications/fl-studio-integrator-reg'`
+</details>
 
-##### Root
+**<details><summary> Root </summary>**
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n32) (lines 32-39, `/usr/`..).
 4. `sudo update-mime-database /usr/share/mime` (for `.flp` association).
+</details>
 
 #### Tips
 
@@ -80,7 +83,7 @@ To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in
 
 **<details><summary> Disabling internet access in the prefix </summary>**
 
-Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`)-> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Address and Port - Apply - OK
+Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`) -> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Address and Port - Apply - OK
 </details>
 
 #### Possible performance improvements
