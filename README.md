@@ -17,25 +17,25 @@ Different distros:
 
 **<details><summary> Home </summary>**
 
-1. Download `fl-studio-integrator.zip` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
+1. Download `Source Code` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
-2. Extract the zip file in the home directory.
+2. Extract the file and move `.local` to the home directory `~`.
 
 3. Go to `~/.local/share/applications`, make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 
-4. Add `/home/ReplaceThisWithYourUSERname` in `fl-studio-integrator.desktop`, `-elm`, and `-reg` to `Exec=` and `Icon=` (before `/.local/`..).
+4. Add `/home/`ReplaceThisWithYourUSERname in `fl-studio-integrator.desktop`, `-elm`, and `-reg` to `Exec=` and `Icon=` (before `/.local/`..).
 
 6. Go to `~/.config` and add `application/flp=fl-studio-integrator.desktop;` in `mimeapps.list`.
 
 To open from the terminal create alias commands:
-
-`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`:
 
 `alias fl-studio-integrator='~/.local/share/applications/fl-studio-integrator'`
 
 `alias fl-studio-integrator-elm='~/.local/share/applications/fl-studio-integrator-elm'`
 
 `alias fl-studio-integrator-reg='~/.local/share/applications/fl-studio-integrator-reg'`
+
+in one of these files:`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 </details>
 
 **<details><summary> Root </summary>**
