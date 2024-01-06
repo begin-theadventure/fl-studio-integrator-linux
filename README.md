@@ -61,7 +61,7 @@ in one of these files: `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 In the terminal:
 `cd` /path/to/prefix -> `winetricks dxvk vkd3d`.
 
-or with the GUI:
+Or with the GUI:
 
 `cd` /path/to/prefix (in the terminal) -> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
 </details>
