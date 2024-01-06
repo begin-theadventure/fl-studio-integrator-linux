@@ -10,7 +10,7 @@ It doesn't take care of installing FL Studio, but integrating it with the system
 
 In version 1.0.4, a new integration has been added for `.exe`, `.lnk`, `.msi` and `.reg` files!
 
-#### How to install
+## How to install
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
 
 Different distros:
