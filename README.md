@@ -54,7 +54,8 @@ in one of these files:`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 
 3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
 
-4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)) such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git) (has to be built with the patch, but there's an unofficially pre-built version on [Copr](https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg).
+4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git) (although this one has to be built with the patch, but there's an unofficially pre-built version on [Copr](https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg)).
+
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
@@ -122,7 +123,7 @@ renice=7
 </details>
 
 **<details><summary> fsync </summary>**
-Needs a patched Wine version such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git).
+Needs a patched Wine version, such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git).
 ```
 export WINEESYNC=0 WINEFSYNC=1
 ```
