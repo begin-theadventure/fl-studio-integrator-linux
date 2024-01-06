@@ -53,9 +53,23 @@ in one of these files:`~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 2. `export WINEDDLOVERRIDES="d2d1=disabled"`.
 
 3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
+
+4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)) such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git) (has to be built with the patch, but there's an unofficially pre-built version on [Copr](https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg).
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
+<details><summary> Winetricks </summary>
+
+In the terminal:
+`cd` /path/to/prefix -> `winetricks dxvk vkd3d`.
+
+or with the GUI:
+
+`cd` /path/to/prefix (in the terminal)-> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`..`OK` -> `dxvk` `vkd3d` `OK`.
+</details>
+
+<details><summary> Manual </summary>
+
 Symlink the prefix to `~/.wine`.
 
 Download [DXVK](https://github.com/doitsujin/dxvk/releases/latest) and the [install script](https://github.com/doitsujin/dxvk/blob/4f90d7bf5f9ad785660507e0cb459a14dab5ac75/setup_dxvk.sh) -> `./setup_dxvk.sh install` in the terminal.
@@ -64,7 +78,7 @@ Download [VKD3D](https://github.com/HansKristian-Work/vkd3d-proton/releases/late
 
 After installing you can delete the symlink.
 
-To update, do the same steps; to uninstall, change `install` to `uninstall`."
+To update, do the same steps; to uninstall, change `install` to `uninstall`."</details>
 </details>
 
 **<details><summary> Low latency </summary>**
@@ -108,6 +122,7 @@ renice=7
 </details>
 
 **<details><summary> fsync </summary>**
+Needs a patched Wine version such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git).
 ```
 export WINEESYNC=0 WINEFSYNC=1
 ```
