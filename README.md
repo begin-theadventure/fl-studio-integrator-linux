@@ -63,7 +63,7 @@ In the terminal:
 
 or with the GUI:
 
-`cd` /path/to/prefix (in the terminal)-> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
+`cd` /path/to/prefix (in the terminal) -> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
 </details>
 
 <details><summary> Manual </summary>
