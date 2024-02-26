@@ -8,7 +8,7 @@ It doesn't take care of installing FL Studio, but integrating it with the system
 
 - Associates the `.flp` files and allows to open them (thanks [defusq](https://aur.archlinux.org/packages/vtfedit)) from the file manager, desktop etc., or the terminal: `fl-studio-integrator "/path/to/*.flp"`.
 
-In version 1.0.4, a new integration has been added for `.exe`, `.lnk`, `.msi` and `.reg` files!
+In version 1.0.4, two new integrations have been added for `.exe`, `.lnk`, `.msi` and `.reg` files!
 
 ## How to install
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
