@@ -42,7 +42,7 @@ in one of these files: `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 1. `Download snapshot` from [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 2. Make `fl-studio-integrator`, `-elm`, and `-reg` executable and edit the `WINEPREFIX` path in them.
 3. Place the files like in the [PKGBUILD](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=fl-studio-integrator#n32) (lines 32-39, `/usr/`..).
-4. `sudo update-mime-database /usr/share/mime` (for `.flp` association).
+4. `sudo update-mime-database /usr/share/mime` (for file associations).
 </details>
 
 #### Tips
