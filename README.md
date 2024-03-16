@@ -80,7 +80,7 @@ To update, do the same steps; to uninstall, change `install` to `uninstall`."</d
 </details>
 
 **<details><summary> Low latency </summary>**
-[WineASIO](https://github.com/wineasio/wineasio), adjust with [`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the script.
+[WineASIO](https://github.com/wineasio/wineasio), adjust with [`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the scripts.
 </details>
 
 **<details><summary> Virtual desktop </summary>**
