@@ -105,18 +105,7 @@ Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32
 
 * Renice
 
-Adjusting the nice value/priority of processes, for example, to 7 (High).</summary>
-
-[/etc/gamemode.ini](https://github.com/FeralInteractive/gamemode/blob/master/example/gamemode.ini)
-
-```
-[general]
-; GameMode can renice game processes. You can put any value between 0 and 20 here, the value
-; will be negated and applied as a nice value (0 means no change). Defaults to 0.
-; To use this feature, the user must be added to the gamemode group (and then rebooted):
-; sudo usermod -aG gamemode $(whoami)
-renice=7
-```
+Adjusting the nice value/priority of processes in [/etc/gamemode.ini](https://github.com/FeralInteractive/gamemode/blob/master/example/gamemode.ini#L24), for example, to 7 (High).</summary>
 </details>
 
 **<details><summary> fsync </summary>**
