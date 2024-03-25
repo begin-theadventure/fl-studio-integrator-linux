@@ -35,7 +35,7 @@ To open from the terminal create alias commands:
 
 `alias fl-studio-integrator-reg='~/.local/share/applications/fl-studio-integrator-reg'`
 
-in one of these files: `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
+in one of these files (depending on your shell): `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 </details>
 
 **<details><summary> Root </summary>**
