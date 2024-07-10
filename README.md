@@ -61,6 +61,8 @@ in one of these files (depending on your shell): `~/.bashrc` / `~/.zshrc` / `~/.
 In the terminal:
 `cd` /path/to/prefix -> `winetricks dxvk vkd3d`.
 
+To update, add the `-f` (force) flag.
+
 Or with the GUI:
 
 `cd` /path/to/prefix (in the terminal) -> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
@@ -126,4 +128,4 @@ export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0 __VK_LAYER_NV_optimus="NVIDIA_only"
 
 **DXVK/VKD3D might also help**.
 
-# Of course, this project is not official.
+## Of course, this project is in no way affiliated with the FL Studio developers.
