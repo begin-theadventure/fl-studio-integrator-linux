@@ -1,6 +1,8 @@
 # FL Studio Integrator
 Integrate FL Studio with your Linux system.
 
+[+](https://github.com/begin-theadventure/fl-studio-integrator-linux?tab=readme-ov-file#tips) tips and possible performance improvements.
+
 #### So what does it do?
 It doesn't take care of installing FL Studio, but integrating it with the system:
 
@@ -8,14 +10,14 @@ It doesn't take care of installing FL Studio, but integrating it with the system
 
 - Associates the `.flp` files and allows to open them (thanks [defusq](https://aur.archlinux.org/packages/vtfedit)) from the file manager, desktop etc., or the terminal: `fl-studio-integrator "/path/to/*.flp"`.
 
-In version 1.0.4, two new integrations have been added for `.exe`, `.lnk`, `.msi` and `.reg` files!
+In version 1.0.4, two new integrations have been added for `.exe`, `.lnk`, `.msi` and `.reg` files! Making stuff such as updating (FL Studio, plugins), installing (plugins) or offline activating with a reg file easier.
 
 ## How to install
 Arch - [the AUR](https://aur.archlinux.org/packages/fl-studio-integrator).
 
 Different distros:
 
-**<details><summary> Home </summary>**
+**<details><summary> Home (recommended)</summary>**
 
 1. Download `Source Code` (from [releases](https://github.com/begin-theadventure/fl-studio-integrator-linux/releases/latest)) and the [icon](https://image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png) (as fl-studio.png).
 
@@ -35,7 +37,7 @@ To open from the terminal create alias commands:
 
 `alias fl-studio-integrator-reg='~/.local/share/applications/fl-studio-integrator-reg'`
 
-in one of these files (depending on your shell): `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
+in one of these files (depending on your shell - most likely bash): `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
 </details>
 
 **<details><summary> Root </summary>**
@@ -51,21 +53,21 @@ in one of these files (depending on your shell): `~/.bashrc` / `~/.zshrc` / `~/.
 1. Running the plugin in a `Detached` mode; re-clicking `Captonize` or `Detailed settings` buttons; clicking on the plugin.
 2. `export WINEDDLOVERRIDES="d2d1=disabled"`.
 3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
-4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git) (although this one has to be built with the patch, but there's an unofficially pre-built version on [Copr](https://copr.fedorainfracloud.org/coprs/patrickl/wine-tkg)).
+4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine).
 
 </details>
 
 **<details><summary> DXVK/VKD3D </summary>**
-<details><summary> Winetricks </summary>
+<details><summary> Winetricks (recommended)</summary>
 
 In the terminal:
-`cd` /path/to/prefix -> `winetricks dxvk vkd3d`.
+`cd` /path/to/prefix -> `winetricks dxvk vkd3d`
 
-To update, add the `-f` (force) flag.
+To update, add the `-f` (force) flag: `winetricks -f dxvk vkd3d`
 
 Or with the GUI:
 
-`cd` /path/to/prefix (in the terminal) -> `winetricks` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
+`cd` "/path/to/prefix" (in the terminal) -> `winetricks --gui` -> `Selected the default wineprefix` `OK` -> `Install a Windows DLL`.. `OK` -> `dxvk` `vkd3d` `OK`.
 </details>
 
 <details><summary> Manual </summary>
@@ -96,14 +98,19 @@ To install, open the file with `FL Studio REG` (or `fl-studio-integrator-reg` in
 </details>
 
 **<details><summary> Disabling internet access in the prefix </summary>**
+Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`) -> Internet Settings -> Connections -> Use a proxy server ✓ - Type something random in Address and Port - Apply - OK
+</details>
 
-Wine Control Panel (`fl-studio-integrator-elm "/path/to/drive_c/windows/system32/control.exe"` or go to the path and open it with `FL Studio ELM`) -> Internet Settings -> Connections -> Use a proxy server ✓ - Type something in Address and Port - Apply - OK
+**<details><summary> How to use `export` enviroment variables? </summary>**
+Paste them into the `fl-studio-integrator` script (and optionally `fl-studio-integrator-elm`).
+
+One per line.
 </details>
 
 #### Possible performance improvements
 
 **<details><summary> GameMode </summary>**
-[`gamemoderun`](https://github.com/FeralInteractive/gamemode) `wine`
+Add `gamemoderun` into the `fl-studio-integrator` script (and optionally `fl-studio-integrator-elm`) on the same line as `wine` (but before it): [`gamemoderun`](https://github.com/FeralInteractive/gamemode) `wine`.
 
 * Renice
 
@@ -111,10 +118,11 @@ Adjusting the nice value/priority of processes in [/etc/gamemode.ini](https://gi
 </details>
 
 **<details><summary> fsync </summary>**
-Needs a patched Wine version, such as: [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine) or [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git).
+Needs a patched Wine version, such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine).
 ```
 export WINEESYNC=0 WINEFSYNC=1
 ```
+
 </details>
 
 **<details><summary> NVIDIA </summary>**
@@ -128,4 +136,4 @@ export __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=0 __VK_LAYER_NV_optimus="NVIDIA_only"
 
 **DXVK/VKD3D might also help**.
 
-## Of course, this project is in no way affiliated with the FL Studio developers.
+### Of course, this project is in no way affiliated with the FL Studio developers.
