@@ -85,6 +85,19 @@ To update, do the same steps; to uninstall, change `install` to `uninstall`."</d
 
 **<details><summary> Low latency </summary>**
 [WineASIO](https://github.com/wineasio/wineasio), adjust with [`PIPEWIRE_QUANTUM`](https://github.com/PipeWire/pipewire#usage), which is already included in the scripts.
+
+If it won't work change in FL Studio:
+
+F11 -> Audio -> Show ASIO Panel -> Preferred buffersize -> OK
+
+As a last resort use regedit:
+
+`fl-studio-integrator-elm` /path/to`/drive_c/windows/syswow64/regedit.exe`
+
+HKEY_CURRENT_USER\Software\Wine\WineASIO
+
+Preferred buffersize -> Base: Decimal -> Set it and OK
+
 </details>
 
 **<details><summary> Virtual desktop </summary>**
