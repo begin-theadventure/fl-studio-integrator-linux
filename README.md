@@ -61,7 +61,7 @@ in one of these files (depending on your shell - most likely bash): `~/.bashrc` 
 <details><summary> Winetricks (recommended)</summary>
 
 In the terminal:
-`cd` /path/to/prefix -> `winetricks dxvk vkd3d`
+`WINEPREFIX="`/path/to/prefix`" winetricks -f dxvk vkd3d`
 
 To update, add the `-f` (force) flag: `winetricks -f dxvk vkd3d`
 
