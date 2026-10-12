@@ -131,7 +131,7 @@ Adjusting the nice value/priority of processes in [/etc/gamemode.ini](https://gi
 </details>
 
 **<details><summary> fsync </summary>**
-Needs a patched Wine version, such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine).
+Needs a patched Wine version, such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-cachyos](https://github.com/CachyOS/wine-cachyos).
 ```
 export WINEESYNC=0 WINEFSYNC=1
 ```
