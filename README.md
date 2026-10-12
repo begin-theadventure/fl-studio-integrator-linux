@@ -53,7 +53,7 @@ in one of these files (depending on your shell - most likely bash): `~/.bashrc` 
 1. Running the plugin in a `Detached` mode; re-clicking `Captonize` or `Detailed settings` buttons; clicking on the plugin.
 2. `export WINEDDLOVERRIDES="d2d1=disabled"`.
 3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
-4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom), [wine-lutris](https://github.com/lutris/wine).
+4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-cachyos](https://github.com/CachyOS/wine-cachyos).
 
 </details>
 
