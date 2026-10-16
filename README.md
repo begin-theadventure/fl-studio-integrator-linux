@@ -53,7 +53,6 @@ in one of these files (depending on your shell - most likely bash): `~/.bashrc` 
 1. Running the plugin in a `Detached` mode; re-clicking `Captonize` or `Detailed settings` buttons; clicking on the plugin.
 2. `export WINEDDLOVERRIDES="d2d1=disabled"`.
 3. Installing DXVK and/or VKD3D (they can fix glitches in some, but also cause them in others, particularly DXVK).
-4. Wine versions with the Vulkan child window patch ([more information](https://bugs.winehq.org/show_bug.cgi?id=45277)), such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-cachyos](https://github.com/CachyOS/wine-cachyos).
 
 </details>
 
@@ -129,12 +128,6 @@ Add `gamemoderun` into the `fl-studio-integrator` script (and optionally `fl-stu
 
 Adjusting the nice value/priority of processes in [/etc/gamemode.ini](https://github.com/FeralInteractive/gamemode/blob/master/example/gamemode.ini#L24), for example, to 7 (High).</summary>
 </details>
-
-**<details><summary> fsync </summary>**
-Needs a patched Wine version, such as: [wine-tkg](https://github.com/Frogging-Family/wine-tkg-git), [wine-cachyos](https://github.com/CachyOS/wine-cachyos).
-```
-export WINEESYNC=0 WINEFSYNC=1
-```
 
 </details>
 
